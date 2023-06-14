@@ -8,12 +8,12 @@ const cusbooked_con = require('../collections/cusbooked_data_con');
 const roomsbookelist_con = require('../collections/rooms_bookedCon');
 const listroomBooked_con = require('../collections/timeroomsbok_con');
 
-router.post('/hallroom' ,hallroom_con.hallrooms)
-router.get('/hallroom' ,hallroom_con.gettingroominfo);
+router.post('/' ,hallroom_con.hallrooms)
+router.get('/' ,hallroom_con.gettingroominfo);
 
 //booked rooms
 router.post('/bookroom',bookroom_con.BookedRooms);
-router.get('/bookroom',bookroom_con.getroombooked);
+router.get('/bookroom',bookroom_con.getroombooked); 
 
 //customer booked Data
 
